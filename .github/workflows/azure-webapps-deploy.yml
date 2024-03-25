@@ -1,7 +1,7 @@
 name: Build and deploy a container to an Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: hogwarts-artifacts-online
+  AZURE_WEBAPP_NAME: hogwarts-artifacts-achang
 
 on:
   push:
@@ -57,7 +57,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-#          app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          app-name: "hogwarts-artifacts-achang"
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: 'ghcr.io/${{ env.REPO }}:${{ github.sha }}'
