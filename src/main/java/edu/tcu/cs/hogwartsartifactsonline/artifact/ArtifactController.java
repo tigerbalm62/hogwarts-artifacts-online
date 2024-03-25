@@ -37,6 +37,7 @@ public class ArtifactController {
 
     @GetMapping
     public Result findAllArtifacts(){
+        System.out.println("Find All Artifacts");
         List<Artifact> foundArtifacts = this.artifactService.findAll();
         // Convert foundArtifacts to a list of artifactDtos
         List<ArtifactDto> artifactDtos = foundArtifacts.stream()
