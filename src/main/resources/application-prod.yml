@@ -13,3 +13,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none # Turn off the automatic creation of tables
+server:
+  port: 80
