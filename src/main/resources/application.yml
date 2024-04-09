@@ -19,3 +19,18 @@ management:
         show-details: always
         probes:
           enabled: true
+  info:
+    env:
+      enabled: true
+
+
+info:
+  app:
+    name: @project.artifactId@
+    description: A web application that manages artifacts and wizards for Hogwarts School of Witchcraft and Wizardry
+    version: @project.version@
+    author: Alvin Chang
+    links:
+      youtube: https://youtube.com/@BingyangWang
+      github: https://github.com/tigerbalm62/hogwarts-artifacts-online
+
