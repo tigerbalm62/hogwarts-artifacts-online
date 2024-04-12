@@ -1,0 +1,9 @@
+scrape_configs:
+  - job_name: "hogwarts-artifacts-online"
+    metrics_path: "/actuator/prometheus"
+    scrape_interval: 3s # how often to scrape
+    static_configs:
+#      - targets: ["docker.for.mac.localhost:80"] # This is for demo purpose. During  production, change this to the production host address.
+#                 for windows use "host.docker.internal"
+#                 for linux use "localhost"
+      - targets: ["10.44.252.16:8080"] # This is for demo purpose. During  production, change this to the production host address.
